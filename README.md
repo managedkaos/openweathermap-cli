@@ -17,7 +17,8 @@ Implement solutions in Bash, Python, and Go.
 
 4.  Capture the JSON response.  The response will look like:
 
-        response='{"coord":{"lon":-118.41,"lat":33.88},"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50n"},{"id":741,"main":"Fog","description":"fog","icon":"50n"}],"base":"stations","main":{"temp":63.07,"pressure":1018,"humidity":100,"temp_min":55.4,"temp_max":73.4},"visibility":9656,"wind":{"speed":8.05,"deg":240},"clouds":{"all":40},"dt":1489553880,"sys":{"type":1,"id":413,"message":0.0081,"country":"US","sunrise":1489586596,"sunset":1489629713},"id":5370082,"name":"Manhattan Beach","cod":200}'
+        {"coord":{"lon":-118.42,"lat":33.92},"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50n"},{"id":721,"main":"Haze","description":"haze","icon":"50n"}],"base":"stations","main":{"temp":61.65,"pressure":1019,"humidity":100,"temp_min":55.4,"temp_max":71.6},"visibility":11265,"wind":{"speed":5.82,"deg":240},"clouds":{"all":75},"dt":1489557720,"sys":{"type":1,"id":413,"message":0.0116,"country":"US","sunrise":1489586595,"sunset":1489629717},"id":5345860,"name":"El Segundo","cod":200}
+
 
 5.  From the response, print the name of the location, the current temperature, and the main weather, seperated by commas.  The output will look like:
 

@@ -22,4 +22,4 @@ Implement solutions in Bash, Python, and Go.
 
 5.  From the response, print the name of the location, the current temperature, and the main weather, seperated by commas.  The output will look like:
 
-        "El Segundo", 61.57, "Mist"
+        "El Segundo", 61.65, "Mist"

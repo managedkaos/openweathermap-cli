@@ -13,7 +13,7 @@ Implement solutions in Bash, Python, and Go.
 
 3. Make a request to http://api.openweathermap.org using the location as a query and imperial units (so degrees are in Farenheit). The request will look like:
 
-        http://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${APIKEY}
+        http://api.openweathermap.org/data/2.5/weather?q=LOCATION&units=imperial&appid=APIKEY
 
 4.  Capture the JSON response.  The response will look like:
 

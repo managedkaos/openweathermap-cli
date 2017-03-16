@@ -4,12 +4,12 @@
 APIKEY=$(head -1 ../apikey.txt)
 
 # Process each command line argument as a location
-for location in $@;
+for location in "$@";
 do
     # Make a request to http://api.openweathermap.org using the location as a query and imperial units
     # Capture the JSON response
     response=$(curl -s "http://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${APIKEY}")
-
+echo $response
     # From the response, print the name of the location, the current temperature, and the main weather,
     name=$(echo $response | jq '.name')
     temp=$(echo $response | jq '.main.temp')

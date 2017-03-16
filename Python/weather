@@ -1,8 +1,19 @@
 #!/usr/bin/env python
+import re
+import sys
 import requests
 
 # Get the API key from apikey.txt, located in the directory above the script
+with open('../apikey.txt','r') as f:
+    APIKEY = f.readline()
+    APIKEY = re.sub('\s', '', APIKEY)
+
 # Process each command line argument as a location
-# Make a request to http://api.openweathermap.org using the location as a query and imperial units
+for target in sys.argv[1:]:
+    # Make a request to http://api.openweathermap.org using the location as a query and imperial units
+    querystring = {"appid":APIKEY,"q":target,"units":"imperial"}
+
+    response = requests.request("GET", 'http://api.openweathermap.org/data/2.5/weather', params=querystring)
+    print response.text    
 # Capture the JSON response
 # From the response, print the name of the location, the current temperature, and the main weather,

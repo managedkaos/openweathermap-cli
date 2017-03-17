@@ -1,0 +1,23 @@
+#!/usr/bin/env perl
+use English;
+use File::Slurp;
+use LWP::Simple;
+use JSON qw( decode_json );
+
+# Get the API key from apikey.txt, located in the directory above the script
+my @apikey = read_file('../apikey.txt');
+chomp($apikey[0]);
+$APIKEY = $apikey[0];
+
+# Process each command line argument as a location
+foreach $location (@ARGV) {
+    
+    # Make a request to http://api.openweathermap.org using the location as a query and imperial units
+    $response = get("http://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${APIKEY}");
+
+    # Capture the JSON response
+    $response = decode_json($response);
+    
+    # From the response, print the name of the location, the current temperature, and the main weather,
+    print "\"$response->{'name'}\", $response->{'main'}{'temp'}, \"$response->{'weather'}[0]{'main'}\"\n";
+}

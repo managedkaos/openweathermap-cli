@@ -1,7 +1,7 @@
 # Open Weather Map CLI
 A command line interface to the Open Weather Map API.
 
-Implement solutions in Bash, Python, and Go.
+Implement solutions in Bash, Python, Perl, and Go.
 
  Requirements are:
 

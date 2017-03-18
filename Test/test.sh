@@ -29,5 +29,5 @@ rm -f $tempfile
 # print the report
 echo "Bash   : $bash_output $bash_time"
 echo "Python : $python_output $python_time"
-echo "Perl   : $perl_output $python_time"
+echo "Perl   : $perl_output $perl_time"
 echo "Go     : TBD"

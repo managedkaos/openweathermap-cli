@@ -23,6 +23,10 @@ python_time=$(<$tempfile)
 perl_output=$(/usr/bin/time $timeopts ../Perl/weather $1 2>$tempfile)
 perl_time=$(<$tempfile)
 
+# go
+go_output=$(/usr/bin/time $timeopts ../Go/weather $1 2>$tempfile)
+go_time=$(<$tempfile)
+
 # clean up the temp file
 rm -f $tempfile
 
@@ -30,4 +34,4 @@ rm -f $tempfile
 echo "Bash   : $bash_output $bash_time"
 echo "Python : $python_output $python_time"
 echo "Perl   : $perl_output $perl_time"
-echo "Go     : TBD"
+echo "Go     : $go_output $go_time"

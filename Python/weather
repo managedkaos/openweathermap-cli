@@ -10,10 +10,10 @@ with open('../apikey.txt','r') as f:
     APIKEY = re.sub('\s', '', APIKEY)
 
 # Process each command line argument as a location
-for target in sys.argv[1:]:
+for location in sys.argv[1:]:
     
     # Make a request to http://api.openweathermap.org using the location as a query and imperial units
-    querystring = {"appid":APIKEY, "q":target, "units":"imperial"}
+    querystring = {"appid":APIKEY, "q":location, "units":"imperial"}
     response = requests.request("GET", 'http://api.openweathermap.org/data/2.5/weather', params=querystring)
     
     # Capture the JSON response

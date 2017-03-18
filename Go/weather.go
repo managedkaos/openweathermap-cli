@@ -62,9 +62,7 @@ func main() {
 			continue
 		}
 
-		//response=$(curl -s "http://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${APIKEY}")
 		// Make a request to http://api.openweathermap.org using the location as a query and imperial units
-		//location_query := url.QueryEscape(location)
 		url := fmt.Sprintf("http://api.openweathermap.org/data/2.5/weather?q=%s&units=imperial&appid=%s", url.QueryEscape(location), APIKEY)
 		request, _ := http.NewRequest("GET", url, nil)
 		client := &http.Client{}

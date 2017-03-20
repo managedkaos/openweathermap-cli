@@ -1,5 +1,5 @@
 # Open Weather Map CLI
-A command line interface to the [Open Weather Map API](http://openweathermap.org/api).
+Develop a command line interface to the [Open Weather Map API](http://openweathermap.org/api).
 
 Implement solutions in Bash, Python, Perl, and Go.
 

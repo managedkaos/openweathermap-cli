@@ -5,7 +5,7 @@ Implement solutions in Bash, Python, Perl, and Go.
 
  Requirements are:
 
-1. Get the API key from apikey.txt, located in the directory above the script.  The file contains one line with the just the key.
+1. Get the API key from apikey.txt, located in the directory above the script.  The file contains one line with just the key.
 
 2. Process each command line argument as a location.  It can be a ZIP code, City, or "City,ST" format.  If no arguments are passed, exit silently without error.  The command should like like:
 

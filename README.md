@@ -1,9 +1,7 @@
 # Open Weather Map CLI
 Develop a command line interface to the [Open Weather Map API](http://openweathermap.org/api).
 
-Implement solutions in Bash, Python, Perl, and Go.
-
- Requirements are:
+Requirements are:
 
 1. Get the API key from apikey.txt, located in the directory above the script.  The file contains one line with just the key.
 

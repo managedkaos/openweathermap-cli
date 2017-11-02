@@ -1,7 +1,20 @@
 #!/usr/bin/env bash
 
+# check to see if `jq` is installed
+if !  $(hash jq) ;
+then
+    echo "$0: 'jq' is needed for JSON processing but it is not installed. Exiting!"
+    exit 1
+fi
+
 # Get the API key from apikey.txt, located in the directory above the script
-APIKEY=$(head -1 ../apikey.txt)
+if ! [ -e ../apikey.txt ];
+then
+    echo "$0: Can't find the API key in '../apikey.txt'.  Exiting!"
+    exit 1
+else 
+    APIKEY=$(head -1 ../apikey.txt)
+fi
 
 # Process each command line argument as a location
 for location in "$@";

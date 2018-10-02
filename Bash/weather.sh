@@ -10,9 +10,12 @@
 #/ Description:
 #/ CLI "tool" and a bash "library" for getting and parsing weather data based on users geolocation data
 #/ 
+#/ You need OpenWeatherMap API key, set it as a WEATHER_APPID env variable
+#/ or provide it with -i, --appid argument
+#/
 #/ Examples:
 #/ ./weather.sh
-#/ ./weather.sh 
+#/ ./weather.sh -l "New York"
 #/ You can source this file and use it's functions
 #/ get_weather
 #/

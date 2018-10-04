@@ -1,7 +1,7 @@
 #!/bin/bash
 if [[ $# -eq 0 ]];
 then
-    exit 0
+    return 0
 fi
 
 # set options for time
@@ -24,6 +24,8 @@ perl_output=$(/usr/bin/time $timeopts ../Perl/weather $1 2>$tempfile)
 perl_time=$(<$tempfile)
 
 # go
+cd ../Go && go build weather.go
+cd ../Test
 go_output=$(/usr/bin/time $timeopts ../Go/weather $1 2>$tempfile)
 go_time=$(<$tempfile)
 

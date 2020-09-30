@@ -1,1 +1,3 @@
-# Bash Solution
+# Bash Solutions
+- managedkaos
+- vandot

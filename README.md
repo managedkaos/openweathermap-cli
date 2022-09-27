@@ -27,7 +27,7 @@ Your challenge is to develop a command line interface to the [Open Weather Map A
 
         "El Segundo", 61.65, "Mist"
         
-6. That's it!  When your solution is complete, run tests to confirm your solution works.  Then, update the [README.md](README.md) at the root of the project with a link to your solution.  Submit a pull request and bask in the glory of your contribution! :star2:
+6. That's it!  When your solution is complete, run tests to confirm your solution works.  Add a README file that explains how to build and run your solution.  Then, update the [README.md](README.md) at the root of the project with a link to your solution.  Submit a pull request and bask in the glory of your contribution! :star2:
 
 # Solutions
 

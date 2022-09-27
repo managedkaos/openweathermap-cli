@@ -6,14 +6,14 @@ Your challenge is to develop a command line interface to the [Open Weather Map A
 2. [Get an API key](https://home.openweathermap.org/api_keys)
 
 ## Tasks and Requirements
-0. Clone the repository and create a directory named after your GitHub username under the language your solution is coded in.  For example, you'll find managedkaos's Bash solution in  `Bash/managedkaos`.
+0. Clone the repository and create a directory named after your GitHub username under the language your solution is coded in.  For example, you'll find [managedkaos's](https://github.com/managedkaos?tab=repositories) Bash solution in `Bash/managedkaos`.
 
-1. Start your code by getting an API key from a file named `apikey.txt`, located in the directory *above* the script.  The file should contain one line with just the key.  Do not commit the apikey.txt file to the repository.  Its already in `.gitignore` but still, be careful. :pray:
+1. Start your code by getting an API key from a file named `apikey.txt`, located in the directory *above* the script.  The file should contain one line with just the key.  Do not commit the `apikey.txt` file to the repository.  The file is already in `.gitignore` but still, be careful. :pray:
 
-2. Your code should process each command line argument as a location.  It can be a [ZIP code](https://en.wikipedia.org/wiki/ZIP_Code)That, a City, or a string in "City,ST" format.  If no arguments are passed, exit silently without error.  For example, calling your script or program for the ZIP code 90210 would like like:
+2. Your code should process each command line argument as a location.  It can be a [ZIP code](https://en.wikipedia.org/wiki/ZIP_Code), a city name, or a string in "City,ST" format, where "ST" is an abbreviation for the name of state.  If no arguments are passed, exit silently without error.  For example, calling your script or program for the ZIP code 90245 would like like:
 
         ./weather 90245
-
+        
 3. Make a request to http://api.openweathermap.org using the location as a query and imperial units (so degrees are in Farenheit). The request will look like:
 
         http://api.openweathermap.org/data/2.5/weather?q=LOCATION&units=imperial&appid=APIKEY

@@ -6,7 +6,7 @@ Your challenge is to develop a command line interface to the [Open Weather Map A
 2. [Get an API key](https://home.openweathermap.org/api_keys)
 
 ## Tasks and Requirements
-0. Clone the repository and create a directory named after your GitHub username under the language your solution is coded in.  For example, you'll find [managedkaos's](https://github.com/managedkaos?tab=repositories) Bash solution in `Bash/managedkaos`.
+0. Fork the repository and create a directory named after your GitHub username under the language your solution is coded in.  For example, you'll find [managedkaos's](https://github.com/managedkaos?tab=repositories) Bash solution in `Bash/managedkaos`.
 
 1. Start your code by getting an API key from a file named `apikey.txt`, located in the directory *above* the script.  The file should contain one line with just the key.  Do not commit the `apikey.txt` file to the repository.  The file is already in `.gitignore` but still, be careful. :pray:
 

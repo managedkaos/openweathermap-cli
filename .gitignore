@@ -1,1 +1,5 @@
-*.txt
+
+# secrets
+apikey.txt
+.env
+config.env 

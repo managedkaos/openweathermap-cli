@@ -8,12 +8,12 @@ Your challenge is to develop a command line interface to the [Open Weather Map A
 ## Tasks and Requirements
 0. Fork the repository and create a directory named after your GitHub username under the language your solution is coded in.  For example, you'll find [managedkaos's](https://github.com/managedkaos?tab=repositories) Bash solution in `Bash/managedkaos`.
 
-1. Start your code by getting an API key from a file named `apikey.txt`, located in the directory *above* the script.  The file should contain one line with just the key.  Do not commit the `apikey.txt` file to the repository.  The file is already in `.gitignore` but still, be careful. :pray:
+1. Start your code by getting an API key from a file named `apikey.txt`, located in the root of the repo.  The file should contain one line with just the key.  Do not commit the `apikey.txt` file to the repository.  The file is already in `.gitignore` but still, be careful. :pray:
 
 2. Your code should process each command line argument as a location.  It can be a [ZIP code](https://en.wikipedia.org/wiki/ZIP_Code), a city name, or a string in "City,ST" format, where "ST" is an abbreviation for the name of state.  If no arguments are passed, exit silently without error.  For example, calling your script or program for the ZIP code 90245 would like like:
 
         ./weather 90245
-        
+
 3. Make a request to http://api.openweathermap.org using the location as a query and imperial units (so degrees are in Farenheit). The request will look like:
 
         http://api.openweathermap.org/data/2.5/weather?q=LOCATION&units=imperial&appid=APIKEY
@@ -26,7 +26,7 @@ Your challenge is to develop a command line interface to the [Open Weather Map A
 5. From the response, print the name of the location, the current temperature, and the main weather, all seperated by commas. The name of the location and the main weather should be enclosed in quotes.  Print the output for each location on a new line if the code receives multiple locations from the command line.  Using the examples above, the output would look like:
 
         "El Segundo", 61.65, "Mist"
-        
+
 6. That's it!  When your solution is complete, run tests to confirm your solution works.  Add a README file that explains how to build and run your solution.  Then, update the [README.md](README.md) at the root of the project with a link to your solution.  Submit a pull request and bask in the glory of your contribution! :star2:
 
 # Solutions

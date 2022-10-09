@@ -9,8 +9,8 @@ import (
 func main() {
 	fmt.Println("Hello, World!")
 
-	// Get the API key from apikey.txt, located in the directory above the script
-	b, err := ioutil.ReadFile("../apikey.txt")
+	// Get the API key from apikey.txt, located in root directory
+	b, err := ioutil.ReadFile("../../apikey.txt")
 	if err != nil {
 		log.Fatal(err)
 	}

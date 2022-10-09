@@ -1,5 +1,4 @@
-
 # secrets
 apikey.txt
 .env
-config.env 
+config.env

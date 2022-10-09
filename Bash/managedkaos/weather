@@ -7,13 +7,13 @@ then
     exit 1
 fi
 
-# Get the API key from apikey.txt, located in the directory above the script
-if ! [ -e ../apikey.txt ];
+# Get the API key from apikey.txt, located in the root directory
+if ! [ -e ../../apikey.txt ];
 then
-    echo "$0: Can't find the API key in '../apikey.txt'.  Exiting!"
+    echo "$0: Can't find the API key in '../../apikey.txt'.  Exiting!"
     exit 1
-else 
-    APIKEY=$(head -1 ../apikey.txt)
+else
+    APIKEY=$(head -1 ../../apikey.txt)
 fi
 
 # Process each command line argument as a location

@@ -1,12 +1,14 @@
 TARGETS=build test clean all
 .PHONY: $(TARGETS)
 
-build:
-	@which carton || echo 'Carton is not installed.'
+check:
+	@which carton || (echo 'carton is not installed' && exit 1)
+
+build: check
 	carton install
 
 test:
-	carton exec ./weather London Paris 'New York City' 'Los Angeles'
+	carton exec ./weather London Paris 'New York' 'Los Angeles'
 
 clean:
 	rm -rvf ./local ./cpanfile.snapshot

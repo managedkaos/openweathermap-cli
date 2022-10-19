@@ -13,10 +13,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - uses: JakubMosakowski/secret-into-file-action@v1.0.0
-      with:
-        secret: ${{ secrets.APIKEY }}
-        filename: "${GITHUB_WORKSPACE}/apikey.txt"
-
     - name: Run tests
       run: make

@@ -4,10 +4,8 @@ use File::Slurp;
 use LWP::Simple;
 use JSON qw( decode_json );
 
-# Get the API key from apikey.txt, located in the root directory
-my @apikey = read_file('../../apikey.txt');
-chomp($apikey[0]);
-$APIKEY = $apikey[0];
+# Get the API key from the environment
+$APIKEY = $ENV{'APIKEY'};
 
 # Process each command line argument as a location
 foreach $location (@ARGV) {

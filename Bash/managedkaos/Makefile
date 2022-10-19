@@ -5,7 +5,7 @@ build:
 	@which bash || echo 'bash is not installed.'
 
 test:
-	./weather London Paris 'New York City' 'Los Angeles'
+	./weather London Paris Boston Edinburgh
 
 clean:
 	@echo "No clean step is needed."
